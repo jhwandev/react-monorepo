@@ -1,0 +1,46 @@
+# Node.js
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Logs
+logs/
+*.log
+*.log.*
+/pnpm-debug.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Monorepo-specific
+.pnp/
+.pnp.js
+.pnpm-debug.log
+
+# Next.js
+.next/
+out/
+build/
+.cache/
+
+# TypeScript
+dist/
+*.tsbuildinfo
+
+# Webpack
+.webpack/
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing
+coverage/
+*.lcov
