@@ -19,6 +19,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
     "@types/styled-components": "^5.1.34"
   }
 }

@@ -1,9 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
+  experimental: {
+    appDir: true,
+  },
   compiler: {
-    styledComponents: true,
+    styledComponents: true, // Styled Components 최적화 활성화
   },
 };
-
-module.exports = nextConfig;

@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "declarationMap": true,
+    "jsx": "react",
+    "types": ["react", "node"], // 필요한 타입만 로드
+    "skipLibCheck": true, // 타입 충돌 무시 (선택 사항)
+    "strict": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.spec.ts"] // 테스트 파일 제외
+}

@@ -11,7 +11,9 @@ export default function HomePage() {
   return (
     <>
       {state && <Button>AfterRender</Button>}
-      <Button>Admin</Button>
+      <br />
+      <br />
+      <Button>Web</Button>
     </>
   );
 }

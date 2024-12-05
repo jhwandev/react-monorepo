@@ -1,5 +1,7 @@
-"use client";
+import PageImpl from "./page-impl";
 
-export default function HomePage() {
-  return <>hello</>;
+function Page() {
+  return <PageImpl />;
 }
+
+export default Page;

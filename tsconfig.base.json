@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@ui/*": ["packages/ui/src/*"]
+      "@atomic/ui/*": ["packages/ui/src/*"]
     }
   }
 }

@@ -1,14 +1,14 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@atomic/ui/*": ["../../packages/ui/src/*"]
+    },
     "jsx": "preserve",
     "outDir": "dist",
     "rootDir": "src",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -26,11 +26,6 @@
       }
     ]
   },
-  "include": [
-    "src",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "dist"
-  ]
+  "include": ["src", "app", ".next/types/**/*.ts"],
+  "exclude": ["dist"]
 }
