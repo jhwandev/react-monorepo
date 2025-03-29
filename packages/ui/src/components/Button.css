@@ -1,0 +1,52 @@
+.button {
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Variants */
+.button--primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.button--primary:hover {
+  background-color: #0056b3;
+}
+
+.button--secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.button--secondary:hover {
+  background-color: #545b62;
+}
+
+/* Sizes */
+.button--small {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.button--medium {
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.button--large {
+  padding: 12px 24px;
+  font-size: 18px;
+}
+
+/* States */
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Width */
+.button--full-width {
+  width: 100%;
+} 
