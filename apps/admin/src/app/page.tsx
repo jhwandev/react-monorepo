@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from '@atomic/ui';
+import { Button } from '@monorepo/ui';
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
 {
-  "name": "@atomic/ui",
+  "name": "@monorepo/ui",
   "version": "0.0.1",
   "private": true,
   "main": "./src/index.ts",

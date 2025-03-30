@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['@atomic/ui'],
+  transpilePackages: ['@monorepo/ui'],
   reactStrictMode: true,
   webpack: (config) => {
     config.module.rules.push({
