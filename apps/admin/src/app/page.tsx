@@ -6,8 +6,9 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [test, setTest] = useState<string>("test loading...");
   const [test2, setTest2] = useState<string>("test2 loading...");
+
   const getTestData = async () => {
-    const res = await fetch("/api/test", {
+    const res = await fetch("/api/test?test=1234", {
       method: "GET",
     });
     const data = await res.json();
@@ -23,9 +24,19 @@ export default function Home() {
     setTest2(data.youSent);
   };
 
+  const getCoinData = async () => {
+    const res = await fetch("/api/coinPrice", {
+      method: "POST",
+      body: JSON.stringify({ symbol: "BTC" }),
+    });
+    const data = await res.json();
+    console.log(data.price);
+  };
+
   useEffect(() => {
     getTestData();
     postTestData();
+    getCoinData();
   }, []);
 
   return (

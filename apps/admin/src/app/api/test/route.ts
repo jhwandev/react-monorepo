@@ -8,5 +8,10 @@ export async function POST(request: Request) {
 }
 
 export async function GET(request: Request) {
-  return NextResponse.json({ message: "Hello World" });
+  const { searchParams } = new URL(request.url);
+  const test = searchParams.get("test");
+  console.log("test parameter:", test);
+  return NextResponse.json({ message: "Hello World2" });
 }
+
+
